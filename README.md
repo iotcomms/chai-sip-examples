@@ -15,9 +15,15 @@ $ npm install
 
 ## SIPRec
 
-invite_siprec.js provides and example that sends a SIPRec Invite requests, starts two RTP streams towards the information in the 200 OK received for the request. After 5s it hangs up the recording by sending a SIP Bye request.
+invite_siprec.js provides an example that sends a SIPRec Invite requests, starts two RTP streams towards the information in the 200 OK received for the request. After 5s it hangs up the recording by sending a SIP Bye request.
 
 `$ node invite_siprec.js`
+
+## SIPRec with provisional response callback triggering Cancel request
+
+invite_cancel.js provides an example that sends a SIPRec Invite requests and then sends a Cancel request when a provisional response has been reveived for the original Invite.
+
+`$ node invite_cancel.js`
 
 ## SIP UAC and UAS for proxy tests
 
